@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- HardWare QCOM -->
+  <project path="hardware/qcom/audio/default" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="aosvp" />
+  <project path="hardware/qcom/audio-caf/msm8996" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" remote="aosvp" revision="oreo-caf-8996" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="aosvp" />
+  <project path="hardware/qcom/display-caf/msm8996" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" remote="aosvp" revision="oreo-caf-8996" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" groups="qcom" remote="aosvp" />
+  <project path="hardware/qcom/media-caf/msm8996" name="android_hardware_qcom_media" groups="qcom" remote="aosvp" revision="oreo-caf-8996" />
+
+  <!-- Ant Wireless -->
+  <project path="external/ant-wireless/ant_native" name="android_external_ant-wireless_ant_native" remote="aosvp" />
+  <project path="external/ant-wireless/ant_service" name="android_external_ant-wireless_ant_service" remote="aosvp" />
+  <project path="external/ant-wireless/antradio-library" name="android_external_ant-wireless_antradio-library" remote="aosvp" />
+
+  <!-- bt -->
+  <project path="hardware/qcom/bt" name="android_hardware_qcom_bt" groups="qcom" remote="aosvp" />
+  <project path="hardware/qcom/bt-caf" name="android_hardware_qcom_bt" groups="qcom" remote="aosvp" revision="oreo-caf" />
+
+  <!-- camera -->
+  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" groups="qcom_camera" remote="aosvp" />
+
+  <!-- Device -->
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="aosvp" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="aosvp" />
+
+  <!-- External -->
+  <project path="external/libnetfilter_conntrack" name="android_external_libnetfilter_conntrack" remote="aosvp" />
+  <project path="external/libnfnetlink" name="android_external_libnfnetlink" remote="aosvp" />
+  <project path="external/powertop" name="android_external_powertop" remote="aosvp" />
+
+  <!-- Gps -->
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" groups="qcom,qcom_gps" remote="aosvp" />
+
+  <!--Keymaster -->
+  <project path="hardware/qcom/keymaster" name="android_hardware_qcom_keymaster" groups="qcom,qcom_keymaster,pdk" remote="aosvp" />
+
+  <!-- Power -->
+  <project path="hardware/qcom/power" name="android_hardware_qcom_power" groups="qcom,pdk" remote="aosvp" />
+
+  <!-- Ril -->
+  <project path="hardware/ril-caf" name="android_hardware_ril" groups="pdk" remote="aosvp" revision="oreo-caf" />
+
+  <!-- System QCOM Softapp -->
+  <project path="system/qcom" name="android_system_qcom" groups="pdk" remote="aosvp" />
+
+  <!-- Wlan -->
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="aosvp" />
+  <project path="hardware/qcom/wlan-caf" name="android_hardware_qcom_wlan" groups="qcom_wlan" remote="aosvp" revision="oreo-caf" />
+
+  <!-- FM service -->
+  <project path="hardware/qcom/fm" name="android_hardware_qcom_fm" remote="aosvp" />
+
+  <!-- Vendors -->
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="aosvp" />
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="android_vendor_qcom_opensource_cryptfs_hw" remote="aosvp" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" remote="aosvp" />
+  <project path="vendor/qcom/opensource/rcs-service" name="android_vendor_qcom_opensource_rcs-service" remote="aosvp" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" remote="aosvp" >
+    <copyfile dest="vendor/qcom/opensource/Android.bp" src="os_pickup.bp"/>
+  </project>
+
+</manifest>
