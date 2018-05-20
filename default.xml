@@ -564,5 +564,6 @@
 
   <!-- CAF manifest -->
   <include name="caf.xml" />
+  <include name="gp.xml" />
 
 </manifest>
